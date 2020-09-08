@@ -1,0 +1,582 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    scroll-behavior: smooth;
+    font-family: 'Rubik', sans-serif;
+}
+
+header{
+    margin-top: 50px;
+    background: white;
+    
+}
+
+.sticky{
+    top: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 10000;
+    
+}
+.thc{
+    
+    text-align: justify;
+    padding: 10px ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.thc img{
+    height: 30px;
+    display: block;
+
+}
+
+.topbtns{
+    display: flex; 
+    justify-content: space-between;
+}
+
+.topbtns button{
+    border: 1px solid black;
+    border-radius: 0;
+    background: none;
+    color: black;
+    margin-right: 20px;
+    outline: nonr;
+    transition: background 2s;
+}
+.topbtns>button:hover,
+.topbtns>button:focus{
+    color: white;
+    background:#16161a;
+    outline:  solid black;
+    
+}
+
+.dropdown-menu{
+    padding: 0;
+    border-radius: 0;
+}
+.dropdown-item{
+    transition: background 2s;
+}
+.dropdown-item:hover{
+    color: white;
+    background:#16161a;
+}
+
+
+.searchactive{
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.searchwindow{
+    position: absolute;
+    background: #ffffff;
+    padding: 50px  20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.searchwindow form{
+    position: relative;
+}
+
+.searchwindow form input{
+    width:100%;
+    padding:10px ;
+    border: none;
+    border: 2px solid #5c5b5b71;
+    
+}
+.searchwindow form button{
+    position: absolute;
+    top: 7px;
+    right:10px;
+    border: none;
+    outline: none;
+}
+
+
+.searchactive:hover{
+    color:#f13030;
+}
+
+.searchclose{
+    position:absolute;
+    top: 10px;
+    right: 10%;
+    font-size: 20px;
+}
+.swactive{
+    display: block;
+}
+
+.nav_area{
+    background:#f13030;
+    height: fit-content;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    color: white;
+    font-weight: bold;
+    padding: 0 20px 0 0;
+    text-decoration: none;
+    transition: color 1s;
+}
+
+nav a:hover{
+    color: #2b0202;
+    text-decoration: none;
+}
+.menutoggle{
+    display: none;
+}
+.Admission{
+    padding: 10px;
+}
+
+
+.wraper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+    padding:0;
+}
+
+.wraper video{
+    width: 100%; 
+}
+
+.pagecontent{
+    padding:80px 0;
+}
+
+#home p{
+    text-align: justify;
+    padding-right: 100px;
+    padding-top: 20px;
+}
+.links>a{
+    color:white;
+    background:#f13030;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: background 2s;
+}
+
+.links>a:hover{
+    background:#a11d1d;
+}
+
+.links ul{
+    list-style: none;
+    padding-left: 20px;
+
+}
+
+.links ul li a{
+padding: 10px 0;
+color:#f13030;
+transition:color 2s;
+
+}
+
+.links ul li a:hover{
+    color:#a11d1d;
+}
+
+
+#news{
+    background: #aaafb4;
+    padding: 10px 0;
+}
+
+
+.necontent{
+    padding: 80px 0;
+}
+
+.spbtn{
+    width: 130px;
+    padding :10px;
+    outline: none;
+    border: none;
+    background: #59566d;
+    color:white;
+    cursor: pointer;
+}
+
+.spbtn:nth-child(2){
+    margin-left: -5px;
+}
+
+.neactive{
+    background:none;
+    background: #08051d;
+}
+.necontainer{
+    position: relative;
+    padding: 50px 0 0;
+    
+}
+.explore{
+    display: none;
+    width:100%;
+}
+
+.newsleter{
+    width:100%;
+}
+
+
+.more{
+    text-align: center;
+    color:#f13030;
+    cursor: pointer;
+    padding-top: 30px;
+
+}
+
+
+
+.more::after{
+    content: 'SEE MORE';
+}
+
+.moreactive::after{
+    content: 'SEE LESS';
+}
+
+.cars{
+    width: calc(100% - 15px);
+    margin: auto;
+    background: white;
+    padding:30px 20px;
+    overflow: hidden;
+    min-height: 420px;
+}
+
+.cars>.imgcontainer{
+    height: 200px;
+    overflow: hidden;
+    
+}
+.imgcontainer>img{
+    margin: auto;
+    display: block;
+    height: 100%;
+    transition: all 7s;
+}
+.imgcontainer>iframe {
+    height: 200px;
+    max-width: 100%;
+}
+.cars>span{
+    color:#f13030;
+    padding: 20px 10px;
+    display: block;
+}
+
+.cars>p,
+.cars>a{
+    color:black;
+    display: block;
+    text-decoration: none;
+    padding: 0px 10px;
+    text-align: justify;
+}
+
+.cars>a:hover{
+    text-decoration: underline;
+}
+
+.hidencards{
+    display: none;
+    padding-top:30px;
+}
+
+.cars:hover img{
+    transform: scale(1.5);
+}
+
+.cars>a.cardpara,
+.cars>p.cardpara{
+    padding-top: 30px;
+    display: block;
+}
+
+.p3{
+    padding: 80px 0;
+    position: relative;
+}
+
+.page3{
+    background: url('../images/Saitowitz-Perelman-Center-Richard-Barnes.jpg') no-repeat center;
+    background-size:cover;
+    height: 600px;
+    border:10px solid #f13030; 
+    
+}
+
+.p3con{
+    width: 50%;
+    padding: 20px;
+    background:  #f13030;
+    color:white;
+    position: absolute;
+    top: 110px;
+    right: 30px;
+}
+
+.p4{
+    border-top: 2px solid #0c07073a ;
+    border-bottom:2px solid #0c07073a ;
+    padding: 50px 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.text{
+    width: calc(55% - 30px);
+}
+
+.link{
+    width: 45%;
+    text-align: right;
+}
+
+.link a{
+    display:inline-block;
+    background:#243047;
+    text-align: center;
+    width: 100px;
+    padding: 5px 0;
+    color:white;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.link a:hover{
+    opacity: .7;
+}
+
+footer{
+    background: #000;
+    padding: 0;
+}
+    .ftr,
+    .ft{
+        padding: 10px ;
+        color: white;
+        text-align: center;
+    }
+    .ftr a,
+    .ft a{
+        color: white; 
+        padding: 0 10px;
+    }
+    
+    .ft a:hover i {
+        transform: scale(1.3);
+    }
+
+    .redfooter{
+        background:#f13030;
+        padding: 20px 0;
+    }
+
+    .redfooter img{
+        height: 50px;
+        display: block;
+        margin: auto;
+
+    }
+
+    .redfooter ul{
+        list-style: none;
+    }
+
+
+    .loder{
+        height: 100vh;
+        background: white;
+        position: fixed;
+        z-index: 10000;
+        top: 0;
+        left: 0;
+        width :100%;
+    }
+
+    .lodercontent{
+        width :100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .lodercontent img{
+        position: absolute;
+        margin: auto;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    #feedback{
+        position:fixed;
+        z-index: 100;
+        margin: auto;
+        top: 50%;
+        right: -20px;
+        background: #f13030;
+        border-radius: 5px;
+        overflow: hidden;
+        transition: all 2s;
+        cursor: pointer;
+        
+    }
+
+    #feedback:hover{
+        right: -3px;
+    }
+
+    .fbc{
+        position:fixed;
+        z-index: 100;
+        margin: auto;
+        top: 50%;
+        right: 5px;
+        height: fit-content;
+        width: 250px;
+        background: white;
+        border-radius: 8px;
+        transform: translateY(-50%);
+        box-shadow:0 0 10px black;
+    }
+    .fbcc{
+        padding: 15px;
+        position: relative;
+        text-align: center;
+    }
+
+    #feedbackclose{
+        color: #f13030;  
+        position: absolute;
+        top: -10px;
+        right: 20px; 
+        font-size: 20px;
+        background: white;
+        border-radius: 50%;
+    }
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width:  768px){
+    .cars{
+        margin-top: 30px;
+    }
+
+    .p4{
+        display: block;
+    }
+    .text,
+    .link{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    nav{
+        display: none;
+    }
+    .nav_area{
+        position: relative;
+    }
+
+    .navactive{
+        display: block;
+    }
+
+    .navbar{
+        display: block;
+    }
+    nav a{
+        display: block;
+        padding: 10px ;
+    }
+    .navcontent{
+        position: relative;
+    }
+
+    .Admission{
+        padding : 0 15px;
+    }
+
+    .menutoggle{
+        padding: 10px 20px;
+        font-family:"Font Awesome";
+        display: inline-block;
+    }
+    .menutoggle::after{
+        content:'\f0c9';
+        
+        
+    }
+
+    .menutoggle.tactive::after{
+        content:'\f0c9';
+        
+    }
+
+
+    header{
+        margin: auto;
+    }
+
+    .intro{
+        position: relative;
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 540px){
+    .p3con{
+        width: 100%;
+        position: relative;
+        margin: auto;
+        top: 0;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .thc{
+        display: block;
+    }
+
+    .topbtns{
+        margin-top: 10px;
+    }
+}
+
